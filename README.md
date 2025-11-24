@@ -1,0 +1,131 @@
+### Q1 Addition
+编写一个Java类 Q1，要求：
+1. 定义一个函数 add，它接受两个整数参数，返回它们的和。 
+2. 在 main 方法中调用这个函数，并打印算式(3 + 5 = 8)。
+
+### Q2 — 用户输入加法 (Addition with Input)
+
+在 Q1 的基础上，修改程序，使其能够从用户输入读取两个整数，然后调用 add 函数进行加法运算，并打印结果。
+
+输出格式如下：
+
+```
+请输入第一个整数: 3
+请输入第二个整数: 5
+3 + 5 = 8
+```
+
+### Q3 — 支持加减乘除的计算器 (Calculator with Keywords)
+
+在 Q2 的基础上，扩展程序，支持四则运算（加、减、乘、除），通过英文指令控制操作。
+
+要求：
+1. 定义四个函数：add, subtract, multiply, divide，分别执行加减乘除运算。
+2. 用户输入两个整数和一个指令（关键字），程序根据指令调用对应函数。
+3. 支持的关键字：add, subtract, multiply, divide
+
+输出结果，例如：
+```
+请输入第一个整数: 10
+请输入第二个整数: 5
+请输入操作(add, subtract, multiply, divide): divide
+10 / 5 = 2
+```
+
+### Q4 动物继承练习（Animal Inheritance）
+
+动物包括水生动物和陆生动物。它们都有名字，并可以呼吸和介绍自己。
+
+请实现以下类继承关系：
+* Animal → AquaticAnimal → Fish、Whale
+* Animal → TerrestrialAnimal → Cat
+
+要求：
+
+1. 每个子类覆盖 breathe() 方法，输出自己的呼吸方式。
+2. 创建 AnimalDemo 类，依次创建 Fish("Nemo")、Whale("Willy")、Cat("Tom")，调用 introduce() 和 breathe()
+
+示例输出
+--- Fish ---
+I am Nemo
+Fish Nemo breathes through gills.
+
+--- Whale ---
+I am Willy
+Whale Willy breathes through lungs.
+
+--- Cat ---
+I am Tom
+Cat Tom breathes through lungs.
+
+在完成代码之前，先考虑一个问题——
+在这个题目中，是否需要用到Abstract Class？
+
+### Q5 
+给定一个大小为 n 的循环链表，反转链表，使其节点顺序反转，同时保持循环特性。反转过程必须通过修改节点之间的链接来实现，而不能改变节点的值。
+原始链表
+![img.png](img.png)
+反转链表
+![img_1.png](img_1.png)
+
+REF：https://www.geeksforgeeks.org/dsa/reverse-circular-linked-list/
+
+### Q6
+Rotate Doubly linked list by N nodes
+Given a doubly-linked list, the task is to rotate the linked list counter-clockwise by p nodes. Here p is a given positive integer and is smaller than the count of nodes in the linked list.
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
+
+![img_4.png](img_4.png)
+![img_5.png](img_5.png)
+
+REF: https://www.geeksforgeeks.org/dsa/rotate-doubly-linked-list-n-nodes/
+
+### Q7
+Write a Java program that reads a text document and outputs the frequency of each alphabet character (‘a’–‘z’) contained in the document.
+
+
+### Q8 
+用递归的方法输出斐波那契数列的前n项
+获取需要计算斐波那契数列的数字。
+
+#### 思路
+递归地从值 N 迭代到 1：
+* 基本情况：如果递归调用的值小于 1，则函数返回 1。
+* 递归调用：如果基本情况不满足，则递归调用前两个值，如下所示：
+`recursive_function(N - 1) + recursive_function(N - 2);`
+
+![img_6.png](img_6.png)
+REF：https://www.geeksforgeeks.org/java/java-fibonacci-series/
+
+
+### Q9
+Stack: Last In First Out (LIFO)
+Implement Stack using linkedlist
+
+栈可以用链表来实现，其中我们维护：
+
+1. 一个节点结构/类，包含：
+2. 数据 → 用于存储元素。
+3. 下一个 → 指向栈中下一个节点的指针/引用。
+4. 指向栈顶节点的指针/引用。
+5. 初始状态下，top = null 表示栈为空。
+![img_7.png](img_7.png)
+![img_8.png](img_8.png)
+
+REF: https://www.geeksforgeeks.org/dsa/implement-a-stack-using-singly-linked-list/
+
+### Q10
+Queue: First-In-First-Out (FIFO)
+使用链表声明队列
+为了用链表实现队列，我们维护包含以下内容的节点结构/类：
+
+* 数据 → 用于存储元素。
+* next → 指向队列中下一个节点的指针/引用。
+* front → 指向第一个节点（队列的头部）。
+* rear → 指向最后一个节点（队列的尾部）。
+
+![img_9.png](img_9.png)
+
+REF: https://www.geeksforgeeks.org/dsa/queue-linked-list-implementation/
+
