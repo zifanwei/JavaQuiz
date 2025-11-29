@@ -21,7 +21,6 @@ class Q5 {
         // Fix the last connection to maintain circular property
         head.next = prev;
         head = prev;
-
         return head;
     }
 
