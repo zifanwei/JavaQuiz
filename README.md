@@ -37,6 +37,10 @@ https://www.geeksforgeeks.org/java/java-program-to-construct-a-binary-search-tre
 根的左子树包含小于根值的键，即 1、3、6、4。
 根的右子树包含大于根值的键，即 10、14、13。
 
+### Tower of Hanoi
+https://www.geeksforgeeks.org/java/java-program-for-tower-of-hanoi/
+汉诺塔是一个数学谜题，它由三根杆和n个圆盘组成。谜题的目标是将整个圆盘堆移动到另一根杆上，并遵守以下简单规则：1）每次只能移动一个圆盘。2）每次移动都是从一叠圆盘中取出最上面的圆盘，并将其放在另一叠圆盘的顶部，也就是说，只有位于最上面的圆盘才能被移动。3）任何圆盘都不能放在比它小的圆盘上面。
+![img_15.png](img_15.png)
 
 ### Q1 Addition
 编写一个Java类 Q1，要求：
