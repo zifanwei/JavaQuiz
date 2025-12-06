@@ -1,3 +1,43 @@
+### Iterator
+remove odd elements from arraylist
+https://www.geeksforgeeks.org/java/iterators-in-java/
+
+
+### Maximum Depth or Height of a Binary Tree
+https://www.geeksforgeeks.org/dsa/find-the-maximum-depth-or-height-of-a-tree/
+给定二叉树的根节点，求该树的最大深度。树的最大深度或高度是指从根节点到最深节点的边的数量。
+![img_12.png](img_12.png)
+
+输出： 2
+说明：从根节点到最深节点的最长路径有 2 条边。
+
+![img_13.png](img_13.png)
+
+输出： 3
+说明：从根节点（节点 1）到最深叶节点（节点 6）的最长路径有 3 条边。
+### Tree Traversal
+
+![img_10.png](img_10.png)
+![img_11.png](img_11.png)
+Output:
+* Inorder Traversal: 10 20 30 100 150 200 300
+* Preorder Traversal: 100 20 10 30 200 150 300
+* Postorder Traversal: 10 30 20 150 300 200 100
+
+
+### Binary Search Tree
+https://www.geeksforgeeks.org/java/java-program-to-construct-a-binary-search-tree/
+二叉搜索树（BST）是计算机科学中广泛使用的数据结构，主要以其高效的搜索、插入和删除操作而闻名。它是一种特殊的二叉树，其中每个节点最多有两个子节点，分别称为左子节点和右子节点。二叉搜索树在搜索、插入和删除等操作的平均时间复杂度为O(log n)，使其非常适合需要快速搜索的应用。
+
+![img_14.png](img_14.png)
+
+图片说明：
+
+这棵树的根节点是 8。
+根的左子树包含小于根值的键，即 1、3、6、4。
+根的右子树包含大于根值的键，即 10、14、13。
+
+
 ### Q1 Addition
 编写一个Java类 Q1，要求：
 1. 定义一个函数 add，它接受两个整数参数，返回它们的和。 
