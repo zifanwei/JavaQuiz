@@ -28,10 +28,10 @@ class Q10 {
     }
 
     // Dequeue operation (returns removed element)
-    public int dequeue() {
+    public Integer dequeue() {
         if (isEmpty()) {
             System.out.println("Queue Underflow");
-            return -1;
+            return null;
         }
         Node temp = front;
         int removedData = temp.data;

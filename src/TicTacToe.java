@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /** Simulation of a Tic-Tac-Toe game (does not do strategy). */
 public class TicTacToe {
 
@@ -76,16 +78,38 @@ public class TicTacToe {
     /** Simple main method to test the Tic-Tac-Toe board */
     public static void main(String[] args) {
         TicTacToe game = new TicTacToe();
+        System.out.println(game);
+        Scanner scanner = new Scanner(System.in);
+
+        int win;
+
+        while(true) {
+            System.out.println(game.player);
+            System.out.println("input x for coordinate:");
+            int i = scanner.nextInt();
+            System.out.println("input y for coordinate:");
+            int j = scanner.nextInt();
+            game.putMark(i,j);
+            System.out.println(game);
+            win = game.winner();
+            if (win != 0) {
+                break;
+            }
+        }
+
+
 
         // Sample moves
-        game.putMark(0, 0); // X
-        game.putMark(0, 1); // O
-        game.putMark(1, 1); // X
-        game.putMark(0, 2); // O
-        game.putMark(2, 2); // X wins
-
-        System.out.println(game);
-        int win = game.winner();
+//        game.putMark(0, 0); // X
+//        System.out.println(game);
+//        game.putMark(0, 1); // O
+//        System.out.println(game);
+//        game.putMark(1, 1); // X
+//        System.out.println(game);
+//        game.putMark(0, 2); // O
+//        System.out.println(game);
+//        game.putMark(2, 2); // X wins
+//        System.out.println(game);
         if (win == X) System.out.println("X wins!");
         else if (win == O) System.out.println("O wins!");
         else System.out.println("No winner yet.");

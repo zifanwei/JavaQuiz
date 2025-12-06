@@ -13,7 +13,7 @@ public class EnglishRuler {
     private static void drawInterval(int centralLength) {
         if (centralLength >= 1) {
             drawInterval(centralLength - 1); // top interval
-            drawLine(centralLength);         // draw center tick line (without label)
+            drawLine(centralLength);         // draw center tick lin e (without label)
             drawInterval(centralLength - 1); // bottom interval
         }
     }
